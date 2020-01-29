@@ -1,0 +1,26 @@
+/*h1{ font-family: Arial, Helvetica, sans-serif; color: green;}
+p{font-size: 250%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;}
+body{ background-color: pink;}*/
+body{background-color:aquamarine;}
+h1{color: fuchsia; font-family: 'Lucida Sans'; font-variant: small-caps; text-align: center; border:5px solid orange; border-radius: 10px; background-color: wheat;;;}
+.n{list-style-type: none; background-color: moccasin;}
+h3{color: gold;; font-variant: small-caps; text-align:center;}
+.album{margin:0 0 2em 0;list-style-type:none;padding: 0;width: 10em;}
+.album li{cursor: pointer;position: relative;left: 0;background-color: #eee;margin: .5em;
+            padding: .3em 0; height: 1.6em; border-radius: 4px; font-variant: small-caps;}
+.album li:hover{color:#607d8b;background-color: #ddd; left:.1em;}
+.album li.selected{background-color: #cfd8dc;color: white;}
+.album li.selected:hover{background-color: #bbd8dC;color:white;}
+.album .badge{display:inline-block;font-size: small; ;color: white;padding: 0.8em 0.7em 0 0.7em;height: 1.8em;
+                background-color: #405061;line-height:1em;position:relative;left:-1px;top:-4px;margin-right: .8em;
+                border-radius: 4px 0 0 4px;}
+                .a{color:blue;}
+
+.small-width{width: 300px;}
+.li-no-bullet{list-style:none;}
+.profile-pic{max-height:100px;}
+.center{text-align:center;}
+.wrapper{margin-top:20px;}
+.title{margin-bottom:20px;}
+.border{border-radius: 5px ;}
+
