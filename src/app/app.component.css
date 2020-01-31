@@ -4,7 +4,7 @@ body{ background-color: pink;}*/
 body{background-color:aquamarine;}
 h1{color: fuchsia; font-family: 'Lucida Sans'; font-variant: small-caps; text-align: center; border:5px solid orange; border-radius: 10px; background-color: wheat;;;}
 .n{list-style-type: none; background-color: moccasin;}
-h3{color: gold;; font-variant: small-caps; text-align:center;}
+h3{color: gold; font-variant: small-caps; text-align:center;}
 .album{margin:0 0 2em 0;list-style-type:none;padding: 0;width: 10em;}
 .album li{cursor: pointer;position: relative;left: 0;background-color: #eee;margin: .5em;
             padding: .3em 0; height: 1.6em; border-radius: 4px; font-variant: small-caps;}

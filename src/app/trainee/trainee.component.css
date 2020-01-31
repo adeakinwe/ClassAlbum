@@ -1,8 +1,13 @@
-.card{transform:translateZ(0);
+.card{
+transform:translateZ(0);
     transition: transform 1.2s ease-out;
-
+    width:16rem;
 }
 
 .card:hover{
     transform: scale(1.1);
+}
+
+.card-img-top{
+	border-radius: 10px;
 }
