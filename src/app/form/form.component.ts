@@ -9,17 +9,19 @@ export class FormComponent implements OnInit {
 name="Abiola";
 email="adeakinwe@gmail.com";
 formValue;
+register = [];
 
 onSubmit(myForm){
   console.log(myForm.value);
   console.log(this.email);
-  this.formValue = myForm.Value;
+  this.formValue = myForm.value;
+  this.register.push(this.formValue);
   myForm.reset();
 }
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {/*
     setTimeout(function(){ 
       this.name = "Akinwe"
     }, 3000),
@@ -28,7 +30,7 @@ onSubmit(myForm){
     }, 4000),
     setTimeout(function(){ 
       this.name = "Abiola"
-    }, 5000)
+    }, 5000)*/
   }
 
 }

@@ -39,11 +39,14 @@
         </div>
         <div class="col-md-12">
             <div *ngIf = "formValue">
-                <p>Name: {{formValue.fname}}</p>
-                <p>Email: {{formValue.email}}</p>
-                <p>Gender: {{formValue.gender}}</p>
-                <p>StateOfOrigin: {{formValue.state}}</p>    
-                <p>Comment: {{bio}}</p>           
+                
+                <div *ngFor="let item of register; let i = index; ">
+                <p>Name: {{item.fname}}</p>
+                 <p>Email:{{item.email}}</p>
+                <p>Gender:{{item.gender}}</p>
+                <p>StateOfOrigin:{{item.state}}</p>    
+                <p>Comment: {{item.bio}}</p> 
+                </div>          
             </div>
         </div>
     </div>
