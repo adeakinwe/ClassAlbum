@@ -1,0 +1,51 @@
+<p>email:{{email}}</p>
+<p>Name:{{name}}</p>
+<div>
+    <input type="button" (click) = "formValue=null" value = "Reset Form">
+</div>
+<div class="row">
+    <div class=" col-md-12"> 
+        
+        <div *ngIf="!formValue">
+        <form name= "myForm" #f = "ngForm" (ngSubmit) = "onSubmit(f)">
+            <div class="a">   
+                <h2>FORMS</h2>
+                <label for = "name">  Name </label> <br>
+                <input type="text" name='fname' placeholder="Enter your Name" [ngModel] = "name" required>
+                <!-- <span *ngIf = "f.controls['fname'].hasError('valid')">Name is required </span> -->
+                <p>
+                    <label for="email">Email</label> <br>
+                    <input type="email" name='email' placeholder="Enter a valid email" [(ngModel)] = "email">
+                </p>
+                <p>
+                    <label for="gender">Gender</label><br>
+                    <label for="gender">Male</label>
+                    <input type="radio" name='gender' value="male" ngModel>
+                    <label for="gender">Female</label>
+                    <input type="radio"name = 'gender' value="female" ngModel>
+                </p>
+                <p>
+                    <label for="state">State</label><br>
+                    <input type="text" name="state" placeholder="Enter your state" ngModel>
+                </p>
+                <p>
+                    <label for="bio">Bio</label><br>
+                    <textarea rows="10" cols="30" placeholder="Please enter a comment" name="bio" ngModel>
+                    </textarea>
+                </p>
+                <input type="submit" value=" Submit "  [disabled] = "!f.valid" >
+            </div>
+            </form>
+        </div>
+        <div class="col-md-12">
+            <div *ngIf = "formValue">
+                <p>Name: {{formValue.fname}}</p>
+                <p>Email: {{formValue.email}}</p>
+                <p>Gender: {{formValue.gender}}</p>
+                <p>StateOfOrigin: {{formValue.state}}</p>    
+                <p>Comment: {{bio}}</p>           
+            </div>
+        </div>
+    </div>
+</div>
+
