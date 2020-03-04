@@ -10,6 +10,8 @@ name="Abiola";
 email="adeakinwe@gmail.com";
 formValue;
 register = [];
+isTemplateDriven = false;
+
 
 onSubmit(myForm){
   console.log(myForm.value);

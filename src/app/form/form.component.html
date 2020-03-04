@@ -1,8 +1,8 @@
+<div *ngIf = "isTemplateDriven">
 <p>email:{{email}}</p>
 <p>Name:{{name}}</p>
-<div>
-    <input type="button" (click) = "formValue=null" value = "Reset Form">
 </div>
+
 <div class="row">
     <div class=" col-md-12"> 
         
@@ -34,8 +34,12 @@
                     </textarea>
                 </p>
                 <input type="submit" value=" Submit "  [disabled] = "!f.valid" >
+                
             </div>
             </form>
+            <div>
+                <input class = "btn-danger" type="button" (click) = "formValue=null" value = "Reset Form">
+            </div>
         </div>
         <div class="col-md-12">
             <div *ngIf = "formValue">
@@ -52,4 +56,3 @@
         </div>
     </div>
 </div>
-

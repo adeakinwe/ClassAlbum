@@ -9,8 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
-  Heading = 'FinTrak Academy'
-  Title='Class Album'
+  Heading = 'FinTrak Academy';
+  Title='Class Album';
+  isTemplateDriven = false;
+  showAlbum = false;
   activeTrainee;
   Academy= [{image:"./assets/img/Abiola01.jpg",name:'Akinwe', complexion:'Black',hobbies:['Football', 'Coding', 'Music']},
             {image:"./assets/img/Abiola02.jpg",name:'Adeseto', complexion:'Fair',hobbies:['Basketball', 'Reading', 'Football']},
