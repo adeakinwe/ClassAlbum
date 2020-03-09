@@ -1,47 +1,12 @@
-﻿<body>
-<div class = "wrapper">
-    <div class = "container">
-
-        <h1><img class='i' src='./assets/img/fintrak.png' alt='FinTrak Logo' height=45px width=auto>{{Heading}}</h1>
-        <h3 class="text-white bg-info rounded-circle"> {{Title}}</h3>
-        <!--nav>
-            <ul class='album'>
-                <li>Abiola</li>
-                <li>Tosin</li>
-                <li>Ibukun</li>
-                <li>Kizito</li>
-                <li>Ruky</li>
-                <li>Richard</li>
-            </ul>
-        <nav-->
-
-              <div class ="row">
-            <div class ="col-md-8">
-            <div class = 'row'>
-                <div class = 'col-md-4 col-sm-4 col-lg-4' *ngFor="let trainee of Academy, let i = index">
-                    <app-trainee [trainee] = "trainee" (selectedTrainee)="traineeListener($event)"> </app-trainee>
-                    </div>
-            </div>
-            </div>
-            <div class="col-md-4">
-                <div class='card' style='width: 16rem' *ngIf="activeTrainee">
-                    <img src="../{{activeTrainee.image}}" class="card-img-top profile-pic" alt="Abiola Passport" height=150px width=150px>
-                    <div class='card-body bg-success'>
-                                <p class = 'card-title'><b>Name: {{activeTrainee.name}}</b></p>
-                                <p><b>Complexion: {{activeTrainee.complexion}}</b></p>
-                                <p><b>Hobbies: {{activeTrainee.hobbies}}</b></p>
-            </div>               
-            </div>
-            </div>
-            </div>
-    <!--div class = 'row'>
-        <div class = 'col-md-4' *ngFor="let trainee of Academy, let i = index">
-            <app-trainee [trainee] = "trainee"> </app-trainee>
-            </div>
-    <div-->   
-
-    </div>
+﻿<div class='row'>
+<nav class='col-md-4'>
+<ul>
+    <li><a [routerLink]="{'/home'}">Home</a></li>
+    <li><a [routerLink]="{'/form'}">Template Form</a></li>
+    <li><a [routerLink]="{'/reactive-form'}">Reactive Form</a></li>
+</ul>
+</nav>
+<div class='col-md-8'>
+    <router-outlet></router-outlet>
 </div>
-<app-form *ngIf="isTemplateDriven"></app-form>
-<app-reactive-form *ngIf="!isTemplateDriven"></app-reactive-form>
-</body>
+</div>
