@@ -2,7 +2,7 @@ import { Routes } from "@angular/router";
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
-import { NotFoundComponent} from './not-found/not-found.component'
+import { NewTraineeComponent } from './new-trainee/new-trainee.component';
 
  export const routes: Routes = [
                         {
@@ -23,12 +23,12 @@ import { NotFoundComponent} from './not-found/not-found.component'
                             component: FormComponent
                         },
                         {
-                            path: 'not-found',
-                            component: NotFoundComponent
+                            path: 'new-trainee',
+                            component: NewTraineeComponent
                         },
                         {
                             path: '**',
-                            component: ReactiveFormComponent
+                            component: HomeComponent
                         }
                         
-]
+];

@@ -1,0 +1,60 @@
+<div class='container'>
+    <h1>{{title}}</h1>
+<form [formGroup]= 'traineeForm' (ngSubmit)='addTrainee(traineeForm)'>
+    <div>
+        <label for='name'>Name:</label>
+        <input type='text' class='form-control' formControlName='name'>
+    </div>
+    <div>
+        <label for='complexion'>Complexion:</label>
+        <select class='form-control' formControlName='complexion'>
+            <option *ngFor='let item of complexion' [value] = 'item'>{{item}}</option>
+        </select>
+    </div>
+    <div>
+        <p>
+            <label for="gender">Gender</label><br>
+            <label for="gender">Male</label>
+            <input type="radio" name='gender' value="male">
+            <label for="gender">Female</label>
+            <input type="radio" name = 'gender' value="female">
+        </p>
+    </div>
+    <!-- <div>
+        <label for='hobbies'>Hobbies:</label>
+        <input type='text' class='form-control' formControlName='hobbies' placeholder="List your hobbies">
+    </div> -->
+    <div>
+        <label for='dob'>DateOfBirth:</label>
+        <input type='text' class='form-control' formControlName='dob' placeholder="dd-mmm">
+    </div>
+    <div>
+        <label for='almamata'>AlmaMata:</label>
+        <input type='text' class='form-control' formControlName='almamata'>
+    </div>
+    <div>
+        <label for='discipline'>Discipline:</label>
+        <input type='text' class='form-control' formControlName='discipline'>
+    </div>
+    <!-- <div>
+        <label for='hobbies'>Hobbies</label>
+            <input type='text' class='form-control' formControlName='hobbies' placeholder="list out your hobbies">   
+    </div> -->
+    <div>
+        <label for='email'>Email:</label>
+        <input type='email' class='form-control' formControlName='email'>
+    </div>
+    <div>
+        <label for='phone'>Phone No:</label>
+        <input type='text' class='form-control' formControlName='phone'>
+    </div>
+
+    <div>
+        <label for='about'>About Me</label>
+        <textarea name='about' id='' cols= '80' rows='10' formControlName='about' placeholder="Briefly describe yourself"></textarea>
+    </div>
+    <div>
+        <button type='submit' value='Submit' class='btn btn-primary btn-lg'>Submit</button>
+    </div>
+</form>
+</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TraineeService } from '../service/trainee.service';
+import { ITrainee } from '../models';
 
 @Component({
   selector: 'app-home',
@@ -20,9 +22,10 @@ export class HomeComponent implements OnInit {
 ];
 
 
-  constructor() { }
-
+  constructor(private traineeServ: TraineeService) { }
+  trainees: ITrainee[] = [];
   ngOnInit() {
+    this.trainees = this.traineeServ.getTrainees();
   }
 
   traineeListener(trainee: any){

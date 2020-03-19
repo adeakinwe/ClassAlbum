@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+h1{color: fuchsia; font-family: fantasy ; font-variant: small-caps; text-align: center;
+    border:5px solid orange; border-radius: 10px; background-color: moccasin;}
+.n{list-style-type: none; background-color: moccasin;}
+h3{color: gold; font-variant: small-caps; text-align:center;}
+label{font-family: fantasy;}
+.a{
+    text-align:center;
+}
+h2{color: gold; font-variant: small-caps; text-align:center;}
